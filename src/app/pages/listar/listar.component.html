@@ -1,0 +1,82 @@
+<div>
+    <h1>listado de tareas</h1>
+</div>
+<div>
+    <table class="tabla">
+        <tr>
+      
+          <th>Titulo</th>
+      
+          <th>Descripcion</th>
+      
+          <th>Estado</th>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>cocinar</td>
+      
+          <td>almuerzo</td>
+      
+          <td>si</td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>barrer</td>
+      
+          <td>sala</td>
+      
+          <td>si</td>
+      
+        </tr>
+      
+        <tr>
+      
+          <td>planchar</td>
+      
+          <td>uniforme</td>
+      
+          <td>Si</td>
+      
+        </tr>
+      
+      </table>
+</div>
+
+
+
+<br>
+<div>
+    <button (click)="mostrartareas()">Agregar Tarea</button>
+</div>
+
+
+<div class="contenedorform" id="contenedorguardartarea" *ngIf="mostrartarea == true">
+
+    <h2>Guardar Tarea</h2>
+
+    <form id="guardartarea">
+        <div>
+            <label for="nombre">Titulo</label>
+            <input id="nombre" placeholder="Titulo"/>
+        </div> 
+        <br>
+        <div>
+            <label for="nombre">Descripcion</label>
+            <input  id="Descripcion" placeholder="Descripcion"/>
+        </div> 
+        <br>
+        
+        <label>Estado</label>
+        <input type="radio" id="estado" name="fav_language" value="HTML">
+            <label for="html">SI</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">NO</label><br><br>
+
+            
+        <button>Guardar Tarea</button>
+    </form>
+</div>
